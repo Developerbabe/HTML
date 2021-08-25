@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        HTML5의 새로운 input 기능
+    -->
+
+    <form method="GET" action="">
+        <table>
+            <tr>
+                <th>이메일</th>
+                <td><input type="email"></td>
+                <td>: 정규표현식을 사용하지 않아도 이메일 형식을 검증해준다.</td>
+            </tr>
+            <tr>
+                <th>홈페이지</th>
+                <td><input type="url"></td>
+                <td>: https:// 또는 http:// 가 포함되어 있는 URL 형식인지 검증하여 준다</td>
+            </tr>
+            <tr>
+                <th>점수</th>
+                <td><input type="range" min="0" max="1000" step="1"></td>
+                <td>: range는 min,max,step이 동반되어야 한다</td>
+            </tr>
+            <tr>
+                <th>날짜</th>
+                <td><input type="date"></td>
+                <td>: 크롬,사파리만 지원가능한 태그이기 때문에, 기본적으로 사용하지 않는다.</td>
+            </tr>
+            <tr>
+                <th>색상표</th>
+                <td><input type="color"></td>
+                <td>: 이 기능 또한, 크롬과 사파리에서만 가능하다</td>
+            </tr>
+            <tr>
+                <th>검색</th>
+                <td><input type="search"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
